@@ -24,3 +24,8 @@ git commit -m 'deploy'
 git push -f git@github.com:vanvibig/vuejs.git gh-pages
 
 cd -
+
+
+=================
+
+git subtree push --prefix dist origin gh-pages
