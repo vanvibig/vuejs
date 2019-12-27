@@ -1,28 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="container" id="app">
+        <div class="row mt-lg-5"></div>
+        <CompletedTodos></CompletedTodos>
+        <GetTodo></GetTodo>
+        <CurrentTodos></CurrentTodos>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    import GetTodo from './components/GetTodo.vue'
+    import CurrentTodos from './components/CurrentTodos.vue'
+    import CompletedTodos from './components/CompletedTodos.vue'
+    export default {
+        components: {
+            GetTodo,
+            CurrentTodos,
+            CompletedTodos
+        }
+    }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    body {
+        font-family: Helvetica, sans-serif;
+    }
 </style>
